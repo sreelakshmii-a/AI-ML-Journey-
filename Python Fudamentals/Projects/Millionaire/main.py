@@ -11,7 +11,14 @@ questions =[
 ["Which is the smallest prime number","0","1","2","3",3]
 ]
 
+
+prizes =[10000,20000,30000,400000,50000,600000,70000,80000,90000,100000]
+
+
+i=0
 for question in questions:
+  
+ 
   print(question[0])
   print(f"1. {question[1]}")
   print(f"2. {question[2]}")
@@ -21,7 +28,11 @@ for question in questions:
   ans=int(input("Enter your answer: "))
   if(question[5]==ans):
     print("Correct!!!")
+    
   else:
     print(f"Wrong!!! \n Answer is {question[5]}")
     break
+
+  print(f"Prize is {prizes[i]}")
+  i+=1
     
